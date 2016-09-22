@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.swing-tech.commons</groupId>
+	<artifactId>commons-util</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0.0.0002-SNAPSHOT</version>
+
+	<!-- #################### -->
+	<!-- Project Information -->
+	<!-- #################### -->
+	<name>Commons Util</name>
+	<description>This project contains generic, non domain-specific utilities</description>
+	<url>http://www.joericearchitect.com</url>
+	<inceptionYear>2016</inceptionYear>
+	<developers>
+		<developer>
+			<id>jrice</id>
+			<name>Joe Rice</name>
+			<email>joericearchitect@gmail.com</email>
+			<roles>
+				<role>Creator</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<!-- #################### -->
+	<!-- Properties -->
+	<!-- #################### -->
+	<properties>
+		<jackson.version>2.8.3</jackson.version>
+		<joda.version>2.9.4</joda.version>
+	</properties>
+
+	<!-- #################### -->
+	<!-- Source Control -->
+	<!-- #################### -->
+	<scm>
+		<connection>scm:svn:https://cooksarm.svn.sourceforge.net/svnroot/cooksarm/trunk/commons/commons-util/1.0.0/</connection>
+		<developerConnection>scm:svn:https://cooksarm.svn.sourceforge.net/svnroot/cooksarm/trunk/commons/commons-util/1.0.0/</developerConnection>
+		<url>http://cooksarm.svn.sourceforge.net/viewvc/cooksarm/trunk/commons/commons-util/1.0.0/</url>
+	</scm>
+
+	<!-- #################### -->
+	<!-- Dependencies -->
+	<!-- #################### -->
+	<dependencies>
+		<!-- JSON Mapping Dependencies -->
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+            <version>2.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-xml-provider</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-joda</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		
+		<!-- Apache Dependencies -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.8.3</version>
+		</dependency>
+		
+		<!-- Joda Dependencies -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>${joda.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<!-- #################### -->
+	<!-- Build Phase Plugins -->
+	<!-- #################### -->
+	<build>
+		<plugins>
+		</plugins>
+	</build>
+</project>
